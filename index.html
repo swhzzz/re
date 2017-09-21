@@ -29,13 +29,13 @@
                     <div class="left-wrap">基本信息</div>
                     <dd>个人信息: <span>沈文豪 / 男 / 本科</span></dd>
                     <dd>工作经验: <span>一年</span></dd>
-                    <dd>博客: <a href="http://www.jianshu.com/u/49ecc37d1892 " target="_blank ">简书</a></dd>
-                    <dd>GitHub: <a href="https://github.com/swhzzz " target="_blank ">Github</a></dd>
+                    <dd>博客: <a class="a" href="http://www.jianshu.com/u/49ecc37d1892 " target="_blank ">简书</a></dd>
+                    <dd>GitHub: <a class="a" href="https://github.com/swhzzz " target="_blank ">Github</a></dd>
                     <dd>意向城市: 杭州</dd>
                 </li>
                 <li class="someRight">
                     <div class="left-wrap">个人评价</div>
-                    <p style="margin-top: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对技术有着好奇心，自学能力强，能够较好的和同事沟通，完成前后端联调，不畏惧难题，迎难而上是我的准则</p>
+                    <p style="margin-top: 24px;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;对技术有着好奇心，自学能力强，能够较好的和同事沟通，明确需求，完成前后端联调，不畏惧难题，迎难而上是我的准则</p>
                 </li>
             </ul>
         </div>
@@ -61,9 +61,9 @@
                         </li>
                         <li>
                             <div class="circle"></div>
-                            <h4>库 / 框架 / 模块化</h4>
+                            <h4>库 / 框架 / 工具</h4>
                             <p>熟悉jQuery一些常见的API，能用jQuery开发常见的页面效果</p>
-                            <p>熟悉Vue，能用vue开发一些小项目，了解vue的双向绑定原理，生命周期以及组件通信，能用vue的transition组件设置一些基本动画，熟悉Vuex，能用Vuex统一管理数据，能用vue-router进行页面路由的管理</p>
+                            <p>熟悉Vue，能用vue开发一些小项目，熟悉vue的双向绑定原理，生命周期以及组件通信，能用vue的transition组件设置一些基本动画，熟悉Vuex，能用Vuex统一管理数据，能用vue-router进行页面路由的管理</p>
                             <p>熟悉React，JSX语法，熟悉无状态组件以及React组件通信和生命周期，了解虚拟DOM</p>
                             <p>熟悉webpack，能使用webpack进行常见的模块化打包</p>
                         </li>
@@ -85,7 +85,7 @@
                     </ul>
                 </li>
                 <li>
-                    <dt><i class="iconfont icon-project "></i>个人项目</dt>
+                    <dt><i class="iconfont icon-project "></i>个人作品</dt>
                     <h3>开源项目</h3>
                     <ul class="exp">
                         <li>
@@ -107,7 +107,7 @@
                                 <a href="https://swhzzz.github.io/vue-resumer/dist/" target="_blank"><i class="icon-link"></i>在线链接</a>
                             </h4>
                             <p><strong>项目介绍: </strong> 一个Vue单页应用，具有本地存储，实时同步数据到预览页面以及预览功能</p>
-                            <p><strong>技术细节: </strong> 刚开始通过Vue的双向绑定，拿到ResumeEditor的数据，然后把数据拿到ResumePreview中进行渲染，但是这样导致两个组件的耦合度太高，于是引入了Vuex进行全局状态的管理，降低了组件之间的耦合度</p>
+                            <p><strong>技术细节: </strong> 刚开始通过Vue的双向绑定，拿到ResumeEditor的数据，然后把数据拿到ResumePreview中进行渲染，但是这样导致两个组件的耦合度太高，于是引入了Vuex进行全局状态的管理，将双向绑定改为单向绑定，牺牲了便捷性换来对state的控制</p>
                             <p><strong>涉及技术: </strong> Vue + Vuex + ES6 + Sass</p>
                         </li>
                         <li>
@@ -128,7 +128,7 @@
                                 <a href="https://swhzzz.github.io/React-Todo/build/" target="_blank"><i class="icon-link"></i>在线链接</a>
                             </h4>
                             <p><strong>项目介绍: </strong> 该项目是一个在线的代办列表，支持用户注册登录，找回密码功能，项目通过组件化的方式实现了增加，删除待办事项，数据采用LeanCloud同步</p>
-                            <p><strong>技术细节: </strong> 整个项目主要分为三个组件，背景组件，登录注册表单组件，待办项的交互逻辑组件，各个组件又分为几个小组件来保证组件的可维护性；项目通过判断用户是否登录来切换不同的组件；起初对组件编写不太注意，后期对部分组件重构为无状态组件</p>
+                            <p><strong>技术细节: </strong> 项目主要分为BackGround组件，UserDialog组件以及TodoInput和TodoItem组件，各个组件又分为几个小组件来保证组件的可维护性；项目通过判断用户是否登录来切换不同的组件；起初对组件编写不太注意，后期对部分组件重构为无状态组件</p>
                             <p><strong>涉及技术: </strong> React + ES6 + CSS 3 + LeanCloud</p>
                         </li>
                         <li>
@@ -143,8 +143,13 @@
                             <p><strong>涉及技术: </strong> HTML 5 + CSS 3 + Sass + jQuery + localStorage + Webpack</p>
                             <p><strong>存在问题: </strong> 由于图片是直接上传到Github上的，没有使用cdn，打开网站会有点慢</p>
                         </li>
-
                     </ul>
+                    <h3>其他</h3>
+                    <a class="a other" href="https://swhzzz.github.io/demos/waterfall/jq-lazyload-waterfall.html" target="_blank">瀑布流懒加载实现新闻加载</a>
+                    <a class="a other" href="https://swhzzz.github.io/demos/carousel/index.html" target="_blank">无缝轮播</a>
+                    <a class="a other" href="https://swhzzz.github.io/demos/carousel/index3.html" target="_blank">渐变轮播</a>
+                    <a class="a other" href="https://swhzzz.github.io/demos/goTop/goTop.html" target="_blank">返回顶部</a>
+                    <a class="a other" href="https://swhzzz.github.io/demos/tabs/tabs.html" target="_blank">Tab</a>
                     <li>
                         <dt><i class="iconfont icon-company"></i>工作经历</dt>
                         <h3><span>浙江华电器材检测所</span></h3>
