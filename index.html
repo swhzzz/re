@@ -80,7 +80,7 @@
                     </ul>
                 </li>
                 <li>
-                    <dt><i class="iconfont icon-project "></i>个人作品</dt>
+                    <dt><i class="iconfont icon-project "></i>项目经验</dt>
                     <h3>开源项目</h3>
                     <ul class="exp">
                         <li>
@@ -89,10 +89,11 @@
                                 <span>命令行聊天机器人</span>
                                 <a href="https://www.npmjs.com/package/happy-robot" target="_blank"><i class="icon-link"></i>npm</a>
                             </h4>
-                            <p><strong>介绍: </strong> 一个命令行聊天机器人，使用图灵机器人API，可以根据用户的输入做出不同的回答，也可以查询城市天气，机票等</p>
+                            <p><strong>功能介绍: </strong> 一个命令行聊天机器人，使用图灵机器人API，可以根据用户的输入做出不同的回答，也可以查询城市天气，机票，图片等</p>
+                            <img style="width: 90%;" src="http://wx3.sinaimg.cn/mw690/c037d34dgy1fkes0suhupj20mi0fidjd.jpg">
                         </li>
                     </ul>
-                    <h3>个人作品</h3>
+                    <h3>个人项目</h3>
                     <ul class="exp ">
                         <li>
                             <div class="circle"></div>
@@ -103,6 +104,12 @@
                             <p><strong>功能介绍: </strong> 播放器共有推荐、歌手、排行、搜索四个页面。包括了轮播、歌手页面左右联动、热门歌单、排行榜、搜索歌曲，图片和路由懒加载，loading等功能。另外还有播放器页面，包括cd的旋转停止，歌词的获取解析滚动，暂停播放，上一曲下一曲以及播放模式的切换</p>
                             <p><strong>技术细节: </strong> 页面通过Vue-router进行跳转，数据由jsonp跨域获得或者使用axios借node server发送get请求得到数据，页面的滚动则用到了better-scroll插件，当数据发生变化时对组件进行初始化以实现滚动，当点击歌曲时通过action分发多重mutation设置播放歌曲，歌词部分利用js-base64进行decode之后使用lyric-parser得到歌词数组，渲染后调用play()进行播放</p>
                             <p><strong>使用技术: </strong> Vue全家桶 + vue-lazyload + better-scroll + axios</p>
+                            <div class="img-wrap">
+                                <img style="width: 160px;" src="http://wx4.sinaimg.cn/mw690/c037d34dgy1fkfc1swl4ej20af0ijwjq.jpg">
+                                <img style="width: 160px;" src="http://wx3.sinaimg.cn/mw690/c037d34dgy1fkfc1rt9wzj20ag0ikgon.jpg">
+                                <img style="width: 160px;" src="http://wx3.sinaimg.cn/mw690/c037d34dgy1fkfc1u0rwhj20af0iiai0.jpg">
+                                <img style="width: 160px;" src="http://wx3.sinaimg.cn/mw690/c037d34dgy1fkfc1v4qzkj20ah0iiafz.jpg">
+                            </div>
                         </li>
                         <li>
                             <div class="circle "></div>
@@ -143,9 +150,10 @@
                                 <a href="https://github.com/swhzzz/Acfun" target="_blank"><i class="icon-link"></i>代码</a>
                                 <a href="https://swhzzz.github.io/Acfun/index.html" target="_blank"><i class="icon-link"></i>在线链接</a>
                             </h4>
-                            <p><strong>功能介绍: </strong> AcFun的首页，包括保存搜索历史记录的搜索框，鼠标移过banner图动态改变提示语的位置，轮播图，Tab吸顶，以及返回顶部</p>
-                            <p><strong>技术细节: </strong> 通过jQuery和Sass高效地编写js和css，利用localStorage的相关API进行数据的存储和读取；通过动态获取鼠标位置来改变提示信息的位置；监听scroll事件返回顶部</p>
-                            <p><strong>使用技术: </strong> jQuery + Sass + localStorage + Webpack</p>
+                            <p><strong>功能介绍: </strong> AcFun的首页，包括图片懒加载，保存搜索历史记录的搜索框，鼠标移过banner图动态改变提示语的位置，轮播图，Tab吸顶，以及返回顶部</p>
+                            <p><strong>技术细节: </strong> 通过jQuery和Sass高效地编写js和css，判断图片的位置并通过data-src和src实现图片懒加载，利用localStorage的相关API进行数据的存储和读取；通过动态获取鼠标位置来改变提示信息的位置；监听scroll事件返回顶部</p>
+                            <p><strong>使用技术: </strong> jQuery + Sass + ES6 + localStorage + Webpack</p>
+                            <img src="https://i.loli.net/2017/10/12/59def17941bc7.png">
                         </li>
                     </ul>
                     <li>
