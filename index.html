@@ -54,15 +54,18 @@
                         </li>
                         <li>
                             <div class="circle "></div>
-                            <h4>JavaScript</h4>
+                            <h4>JavaScript / jQuery</h4>
                             <p>熟悉原生 JavaScript，事件模型，事件委托</p>
                             <p>熟悉DOM常见操作，熟悉闭包，Ajax，跨域，原型，继承，this等</p>
                             <p>熟悉常用的ES6语法let，const，module，promise，解构赋值，箭头函数，class等</p>
+                            <p>熟悉jQuery，能用jQuery开发常见的页面效果</p>
+                            <a class="a other" href="https://swhzzz.github.io/demos/waterfall/jq-lazyload-waterfall.html" target="_blank">瀑布流懒加载</a>
+                            <a class="a other" href="https://swhzzz.github.io/demos/carousel/index.html" target="_blank">无缝轮播</a>
+                            <a class="a other" href="https://swhzzz.github.io/demos/carousel/index3.html" target="_blank">渐变轮播</a>
                         </li>
                         <li>
                             <div class="circle"></div>
-                            <h4>库 / 框架 / 工具</h4>
-                            <p>熟悉jQuery，能用jQuery开发常见的页面效果</p>
+                            <h4>框架 / 工具</h4>
                             <p>熟悉Vue，Vue的双向绑定原理，生命周期以及组件通信，能用Vue设置过渡动画，熟悉Vuex，能用Vuex统一管理数据，熟悉vue-router管理路由</p>
                             <p>熟悉React，JSX语法，熟悉无状态组件以及React组件通信和生命周期</p>
                             <p>熟悉webpack，能使用webpack进行打包</p>
@@ -89,7 +92,7 @@
                             <p><strong>介绍: </strong> 一个命令行聊天机器人，使用图灵机器人API，可以根据用户的输入做出不同的回答，也可以查询城市天气，机票等</p>
                         </li>
                     </ul>
-                    <h3>作品</h3>
+                    <h3>个人作品</h3>
                     <ul class="exp ">
                         <li>
                             <div class="circle"></div>
@@ -102,17 +105,6 @@
                             <p><strong>使用技术: </strong> Vue全家桶 + vue-lazyload + better-scroll + axios</p>
                         </li>
                         <li>
-                            <div class="circle"></div>
-                            <h4>
-                                <span>Node.js便利贴</span>
-                                <a href="https://github.com/swhzzz/express-sticky-note" target="_blank"><i class="icon-link"></i>代码</a>
-                                <a href="http://note.swhzzz.site/" target="_blank"><i class="icon-link"></i>在线链接</a>
-                            </h4>
-                            <p><strong>功能介绍: </strong> Github第三方注册登录，前端实现动画、拖拽、自动瀑布流布局，后端实现数据库的增删改查</p>
-                            <p><strong>技术细节: </strong> 利用Github的oAuth Apps生成项目ID和Secret，通过passport-github请求认可，填写callbackURL，返回已登录的用户信息；当用户增加便利贴时，数据库生成当前便利贴唯一ID，当删除便利贴时，通过查找便利贴ID和username进行删除；增加删除会进行瀑布流布局</p>
-                            <p><strong>使用技术: </strong> Express + sqlite3 + jQuery + CSS 3 + passport</p>
-                        </li>
-                        <li>
                             <div class="circle "></div>
                             <h4><span>React在线Todo项目</span>
                                 <a href="https://github.com/swhzzz/React-Todo" target="_blank"><i class="icon-link"></i>代码</a>
@@ -121,6 +113,17 @@
                             <p><strong>功能介绍: </strong> 该项目是一个在线的代办列表，支持用户注册登录，找回密码功能，项目通过组件化的方式实现了增加，删除待办事项，数据采用LeanCloud同步</p>
                             <p><strong>技术细节: </strong> 项目主要分为BackGround组件，UserDialog组件以及TodoInput和TodoItem组件，各个组件又分为几个小组件来保证组件的可维护性；项目通过判断用户是否登录来切换不同的组件；起初对组件编写不太注意，后期对部分组件重构为无状态组件</p>
                             <p><strong>使用技术: </strong> React + ES6 + CSS 3 + LeanCloud</p>
+                        </li>
+                        <li>
+                            <div class="circle"></div>
+                            <h4>
+                                <span>Node.js便利贴</span>
+                                <a href="https://github.com/swhzzz/express-sticky-note" target="_blank"><i class="icon-link"></i>代码</a>
+                                <a href="http://note.swhzzz.site/" target="_blank"><i class="icon-link"></i>在线链接</a>
+                            </h4>
+                            <p><strong>功能介绍: </strong> Github第三方注册登录，前端实现动画、拖拽、自动瀑布流布局，后端实现数据库的增删改查</p>
+                            <p><strong>技术细节: </strong> 利用Github的oAuth Apps生成项目ID和Secret，通过passport-github请求认可，填写callbackURL，返回已登录的用户信息；当用户增加便利贴时，数据库生成当前便利贴唯一ID，当删除便利贴时，通过查找便利贴ID和username进行删除；增加删除会进行瀑布流布局</p>
+                            <p><strong>使用技术: </strong> Express + sqlite3 + jQuery + passport</p>
                         </li>
                         <li>
                             <div class="circle"></div>
@@ -142,15 +145,9 @@
                             </h4>
                             <p><strong>功能介绍: </strong> AcFun的首页，包括保存搜索历史记录的搜索框，鼠标移过banner图动态改变提示语的位置，轮播图，Tab吸顶，以及返回顶部</p>
                             <p><strong>技术细节: </strong> 通过jQuery和Sass高效地编写js和css，利用localStorage的相关API进行数据的存储和读取；通过动态获取鼠标位置来改变提示信息的位置；监听scroll事件返回顶部</p>
-                            <p><strong>使用技术: </strong> HTML 5 + CSS 3 + Sass + jQuery + localStorage + Webpack</p>
+                            <p><strong>使用技术: </strong> jQuery + Sass + localStorage + Webpack</p>
                         </li>
                     </ul>
-                    <h3>其他</h3>
-                    <a class="a other" href="https://swhzzz.github.io/demos/waterfall/jq-lazyload-waterfall.html" target="_blank">瀑布流懒加载实现新闻加载</a>
-                    <a class="a other" href="https://swhzzz.github.io/demos/carousel/index.html" target="_blank">无缝轮播</a>
-                    <a class="a other" href="https://swhzzz.github.io/demos/carousel/index3.html" target="_blank">渐变轮播</a>
-                    <a class="a other" href="https://swhzzz.github.io/demos/goTop/goTop.html" target="_blank">返回顶部</a>
-                    <a class="a other" href="https://swhzzz.github.io/demos/tabs/tabs.html" target="_blank">Tab</a>
                     <li>
                         <dt><i class="iconfont icon-company"></i>工作经历</dt>
                         <h3><span>浙江华电器材检测研究所</span></h3>
