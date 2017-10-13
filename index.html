@@ -101,8 +101,8 @@
                                 <span>基于Vue全家桶的音乐播放器Web App</span>
                                 <a href="https://github.com/swhzzz/mu" target="_blank"><i class="icon-link"></i>代码</a>
                             </h4>
-                            <p><strong>功能介绍: </strong> 播放器共有推荐、歌手、排行、搜索四个页面。包括了轮播、歌手页面左右联动、热门歌单、排行榜、搜索歌曲，图片和路由懒加载，loading等功能。另外还有播放器页面，包括cd的旋转停止，歌词的获取解析滚动，暂停播放，上一曲下一曲以及播放模式的切换</p>
-                            <p><strong>技术细节: </strong> 页面通过Vue-router进行跳转，数据由jsonp跨域获得或者使用axios借node server发送get请求得到数据，页面的滚动则用到了better-scroll插件，当数据发生变化时对组件进行初始化以实现滚动，当点击歌曲时通过action分发多重mutation设置播放歌曲，歌词部分利用js-base64进行decode之后使用lyric-parser得到歌词数组，渲染后调用play()进行播放</p>
+                            <p><strong>功能介绍: </strong> 播放器共有推荐、歌手、排行、搜索四个页面。包括了轮播、歌手页面左右联动、热门歌单、排行榜、搜索歌曲，图片和路由懒加载，loading等功能。播放器组件包括了cd的旋转停止，歌词的获取、解析和滚动，暂停播放，上一曲下一曲以及播放模式的切换</p>
+                            <p><strong>技术细节: </strong> 页面通过Vue-router进行跳转，数据由jsonp跨域或由axios借node server发送get请求得到，页面的滚动则用到了better-scroll插件，当数据发生变化时对组件进行初始化以实现滚动，当点击歌曲时通过action分发多重mutation设置播放歌曲，歌词部分利用js-base64进行decode之后使用lyric-parser得到歌词数组，渲染后调用play()进行播放</p>
                             <p><strong>使用技术: </strong> Vue全家桶 + vue-lazyload + better-scroll + axios</p>
                             <div class="img-wrap">
                                 <img style="width: 160px;" src="http://wx4.sinaimg.cn/mw690/c037d34dgy1fkfc1swl4ej20af0ijwjq.jpg">
@@ -140,7 +140,7 @@
                                 <a href="https://swhzzz.github.io/vue-resumer/dist/" target="_blank"><i class="icon-link"></i>在线链接</a>
                             </h4>
                             <p><strong>功能介绍: </strong> 一个Vue单页应用，具有本地存储，实时同步数据到预览页面以及预览功能</p>
-                            <p><strong>技术细节: </strong> 刚开始通过Vue的双向绑定，拿到ResumeEditor的数据，然后把数据拿到ResumePreview中进行渲染，但是这样导致两个组件的耦合度太高，于是引入了Vuex进行全局状态的管理，将双向绑定改为单向绑定，有利于数据的管理</p>
+                            <p><strong>技术细节: </strong> 项目起初通过Vue的双向绑定，获得ResumeEditor的数据并将数据传递到ResumePreview中进行渲染，但是这样导致两个组件的耦合度太高，于是引入了Vuex进行全局状态的管理，将双向绑定改为单向绑定，有利于数据的管理</p>
                             <p><strong>使用技术: </strong> Vue + Vuex + ES6 + Sass</p>
                         </li>
                         <li>
