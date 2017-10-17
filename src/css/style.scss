@@ -371,4 +371,11 @@ footer a {
 
 .img-wrap {
     display: flex;
+    img {
+        margin-right: 8px;
+    }
+}
+
+.base-info p+p {
+    margin-top: 6px;
 }
